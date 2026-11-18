@@ -1,28 +1,23 @@
-export default function ProjectCard({ name, description, link }) {
+import './ProjectCard.css'
+
+export default function ProjectCard({ name, technology, status, description, link }) {
+  let condition = status === 'Work In Progress' ? true : false
+  const statusClass = condition ? 'wip' : 'completed'
+
   return (
-    <div
-      style={{
-        border: '1px solid white',
-        padding: '5px',
-        margin: '5px',
-        width: '300px',
-        height: '250px',
-        backgroundColor: '#ff00002f',
-      }}
-    >
+    <div className='project-card'>
       <a
-        style={{
-          textDecoration: 'underline',
-          color: 'white',
-          textAlign: 'left',
-        }}
+        className='project-card-title'
         href={link}
         target='_blank'
         rel='noopener noreferrer'
       >
         <h3>{name}</h3>
       </a>
-      <p style={{ textAlign: 'left' }}>{description}</p>
+      <p className='project-card-technology'>{technology}</p>
+
+      <p className='project-card-description'>{description}</p>
+      <p className={statusClass}>{status}</p>
     </div>
   )
 }
