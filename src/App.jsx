@@ -8,16 +8,12 @@ function App() {
       <h1 className='site-title'>Trevor Small</h1>
       <p className='site-subtitle'>Software Development • IT • Game Development</p>
       <div className='social-links'>
-        <a
-          href='https://github.com/YOUR_USERNAME'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
+        <a href='https://github.com/TrevorS03' target='_blank' rel='noopener noreferrer'>
           GitHub
         </a>
 
         <a
-          href='https://linkedin.com/in/YOUR_USERNAME'
+          href='https://www.linkedin.com/in/trevorsmall03/'
           target='_blank'
           rel='noopener noreferrer'
         >
